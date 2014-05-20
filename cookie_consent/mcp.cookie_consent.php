@@ -60,7 +60,7 @@ class Cookie_consent_mcp {
 	 */	
 	public function index()
 	{
-		$this->EE->cp->set_variable('cp_page_title', $this->EE->lang->line('cookie_consent_module_name'));
+		$this->EE->view->cp_page_title = $this->EE->lang->line('cookie_consent_module_name');
 
 		$vars['show_lcb'] = 1;
 		$vars['show_lcb'] = 0;
